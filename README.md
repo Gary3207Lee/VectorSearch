@@ -73,7 +73,7 @@ LIMIT 5;
 
 ### Results
 
-![blob/main/images/01_01_PostgreSQL_Results.png](images\01_01_PostgreSQL_Results.png)
+![./blob/main/images/01_01_PostgreSQL_Results.png](images\01_01_PostgreSQL_Results.png)
 </br>
 
 ## Azure SQL Database
