@@ -84,7 +84,7 @@ Reference Doc: </br>
 
 ### Create Table with Column Store Index
 
-![blob/main/images/02_01_SQLDB_01.png](images\02_01_SQLDB_01.png)
+![images/02_01_SQLDB_01.png](images/02_01_SQLDB_01.png)
 
 ```sql
 CREATE TABLE [dbo].[dfv_sum](
@@ -156,7 +156,7 @@ order by
 
 ### Results
 
-![images\02_02_SQLDB_Results.png](images\02_02_SQLDB_Results.png)
+![images/02_02_SQLDB_Results.png](images/02_02_SQLDB_Results.png)
 </br>
 
 ## Azure Cosmos MongoDB vCore
@@ -185,7 +185,7 @@ db.runCommand({
 });
 ```
 
-![images\03_01_Cosmos_IVF.png](images\03_01_Cosmos_IVF.png)
+![images/03_01_Cosmos_IVF.png](images/03_01_Cosmos_IVF.png)
 
 ```json
 db.runCommand({ 
@@ -208,7 +208,7 @@ db.runCommand({
 });
 ```
 
-![images\03_02_Cosmos_HNSW.png](images\03_02_Cosmos_HNSW.png)
+![images/03_02_Cosmos_HNSW.png](images/03_02_Cosmos_HNSW.png)
 
 ### Vector Search
 
@@ -245,7 +245,7 @@ db.C4_IVF_COS.aggregate([
   }
 ]);
 ```
-![images\03_03_Cosmos_Search_IVF.png](images\03_03_Cosmos_Search_IVF.png)
+![images/03_03_Cosmos_Search_IVF.png](images/03_03_Cosmos_Search_IVF.png)
 
 ```json
 db.C4_HNSW_COS.aggregate([
@@ -266,17 +266,17 @@ db.C4_HNSW_COS.aggregate([
   }
 ]);
 ```
-![images\03_04_Cosmos_Search_HNSW.png](images\03_04_Cosmos_Search_HNSW.png)
+![images/03_04_Cosmos_Search_HNSW.png](images/03_04_Cosmos_Search_HNSW.png)
 
 ### Results
 
 #### 1st Try
 
-![images\03_05_Cosmos_Result_1st.png](images\03_05_Cosmos_Result_1st.png)
+![images/03_05_Cosmos_Result_1st.png](images/03_05_Cosmos_Result_1st.png)
 
 #### 2nd Try
 
-![images\03_06_Cosmos_Result_2nd.png](images\03_06_Cosmos_Result_2nd.png)
+![images/03_06_Cosmos_Result_2nd.png](images/03_06_Cosmos_Result_2nd.png)
 
 </br>
 
@@ -286,8 +286,8 @@ Reference Doc: [Vectors in Azure AI Search](https://learn.microsoft.com/en-us/az
 
 ### Results
 
-![images\04_01_AISearch_Results.png](images\04_01_AISearch_Results.png)
+![images/04_01_AISearch_Results.png](images/04_01_AISearch_Results.png)
 
 ## Overall Results
 
-![images\05_01_Overall_Results.png](images\05_01_Overall_Results.png)
+![images/05_01_Overall_Results.png](images/05_01_Overall_Results.png)
