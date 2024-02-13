@@ -1,5 +1,16 @@
 # VectorSearch
 
+
+## DataSet
+
+[Hugging Face C4](https://huggingface.co/datasets/c4) </br>
+
+![images/00_01_DataSet_C4.png](images/00_01_DataSet_C4.png)
+</br>
+
+![images/00_02_DataSet_C4_Embedded.png](images/00_02_DataSet_C4_Embedded.png)
+</br>
+
 ## Azure PostgreSQL Flexible Server
 
 Reference Doc: </br>
