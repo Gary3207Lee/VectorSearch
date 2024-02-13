@@ -81,6 +81,7 @@ LIMIT 5;
 Reference Doc: </br>
 [Vector Similarity Search with Azure SQL database and OpenAI](https://devblogs.microsoft.com/azure-sql/vector-similarity-search-with-azure-sql-database-and-openai/) </br>
 [SQL SERVER VECTOR SEARCH](https://www.architecture-performance.fr/ap_blog/semantic-vector-search-with-sql-server/) </br>
+[azure-sql-db-openai](https://github.com/Azure-Samples/azure-sql-db-openai) </br>
 
 ### Create Table with Column Store Index
 
@@ -319,6 +320,55 @@ Reference Doc: </br>
 
 </br>
 
-## Overall Results
+## Summary
 
-![images/05_01_Overall_Results.png](images/05_01_Overall_Results.png)
+### What are your options when choosing a vector search in Azure?
+
+A vector database is a type of database that stores and retrieves data in the form of vectors, which are arrays of numbers that represent features or attributes of objects. Vector databases are often used for applications that require fast and accurate similarity search, such as image retrieval, natural language processing, recommendation systems, and machine learning.
+In Azure, there are several options for choosing a vector database, depending on your needs and preferences. Some of the most common options are:
+
+#### Traditional Relational Database
+
+- Azure Database for PostgreSQL: This is a fully managed relational database service that offers high availability, security, and scalability. You can use Azure Database for PostgreSQL to store and query vector data using PostgreSQL extensions such as pgvector, which enables vector indexing and similarity search using various distance metrics.
+- Azure SQL Database: This is a fully managed relational database service that offers high performance, security, and scalability. You can use Azure SQL Database to store and query vector data using features such as columnstore index, which enables columnar storage and compression for large vector data.
+
+#### Distributed Relational Database
+
+- Azure Cosmos DB for PostgreSQL: This is a fully managed and scalable service that provides compatibility with the PostgreSQL wire protocol and supports JSON and geospatial data types. You can use Azure Cosmos DB for PostgreSQL to store and query vector data using PostgreSQL extensions such as pgvector, which enables vector indexing and similarity search using various distance metrics.
+
+#### NoSQL Database
+
+- Azure Cosmos DB for MongoDB (vCore): This is another fully managed and scalable service that provides compatibility with the MongoDB wire protocol and supports BSON and geospatial data types. You can use Azure Cosmos DB for MongoDB to store and query vector data using MongoDB features such as vector field, which allows you to perform text search and cosine similarity on vector data.
+
+#### Search Engine
+
+- Azure AI Search (formally Azure Cognitive Search): This is a cloud-based search service that allows you to easily add sophisticated search capabilities to your applications. You can use Azure AI Search to store and query vector data using features such as semantic search, which leverages natural language processing and deep learning to perform semantic similarity and ranking on vector
+
+### Vector Search Algorithm, Indexing and Similarity/Distance Calculation
+
+![images/05_01_Algorithm_Index.png](images/05_01_Algorithm_Index.png) </br>
+
+- Azure Database for PostgreSQL & Azure Cosmos DB for PostgreSQL </br>
+By default, pgvector performs exact nearest neighbor search, which provides perfect recall.
+You can query or add indexes with different distance functions you want to use.
+  - IVFFLAT (Approximate Nearest Neighbor) and HNSW (Hierarchical Navigable Small Worlds)
+  - L2 Distance, Inner Product and Cosine Distance are available with index.
+
+- Azure SQL Database </br>
+SQL Database doesn't have vector data type. However, you can pivot vector array into clustered columnstore indexed table.
+![images/02_01_SQLDB_01.png](images/02_01_SQLDB_01.png) </br>
+Cosign Similarity calculation is available with query. </br>
+![images/05_02_Summary_SQL_Query.png](images/05_02_Summary_SQL_Query.png)
+
+- Azure Cosmos DB for MongoDB (vCore)
+  - IVFFLAT and HNSW (Preview)
+  - L2 Distance, Inner Product and Cosine Distance are available with index.
+
+- Azure AI Search
+  - HNSW and Exhaustive KNN (K-Nearest Neighbors)
+  - L2 Distance, Inner Product and Cosine Distance are available.
+</br>
+
+### Overall Results
+
+![images/05_03_Overall_Results.png](images/05_03_Overall_Results.png)
