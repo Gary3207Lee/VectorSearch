@@ -73,7 +73,7 @@ LIMIT 5;
 
 ### Results
 
-![blob/main/images\01_01_PostgreSQL_Results.png](images\01_01_PostgreSQL_Results.png)
+![blob/main/images/01_01_PostgreSQL_Results.png](images\01_01_PostgreSQL_Results.png)
 </br>
 
 ## Azure SQL Database
@@ -84,7 +84,7 @@ Reference Doc: </br>
 
 ### Create Table with Column Store Index
 
-![blob/main/images\02_01_SQLDB_01.png](images\02_01_SQLDB_01.png)
+![blob/main/images/02_01_SQLDB_01.png](images\02_01_SQLDB_01.png)
 
 ```sql
 CREATE TABLE [dbo].[dfv_sum](
