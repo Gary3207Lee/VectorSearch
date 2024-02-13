@@ -73,7 +73,7 @@ LIMIT 5;
 
 ### Results
 
-![images\01_01_PostgreSQL_Results.png](images\01_01_PostgreSQL_Results.png)
+![blob/main/images\01_01_PostgreSQL_Results.png](images\01_01_PostgreSQL_Results.png)
 </br>
 
 ## Azure SQL Database
@@ -84,7 +84,7 @@ Reference Doc: </br>
 
 ### Create Table with Column Store Index
 
-![images\02_01_SQLDB_01.png](images\02_01_SQLDB_01.png)
+![blob/main/images\02_01_SQLDB_01.png](images\02_01_SQLDB_01.png)
 
 ```sql
 CREATE TABLE [dbo].[dfv_sum](
@@ -282,6 +282,7 @@ db.C4_HNSW_COS.aggregate([
 
 ## Azure AI Search
 
+Reference Doc: [Vectors in Azure AI Search](https://learn.microsoft.com/en-us/azure/search/vector-search-overview) </br>
 
 ### Results
 
