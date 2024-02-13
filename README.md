@@ -348,23 +348,23 @@ In Azure, there are several options for choosing a vector database, depending on
 
 ![images/05_01_Algorithm_Index.png](images/05_01_Algorithm_Index.png) </br>
 
-- Azure Database for PostgreSQL & Azure Cosmos DB for PostgreSQL </br>
+- **Azure Database for PostgreSQL & Azure Cosmos DB for PostgreSQL** </br>
 By default, pgvector performs exact nearest neighbor search, which provides perfect recall.
 You can query or add indexes with different distance functions you want to use.
   - IVFFLAT (Approximate Nearest Neighbor) and HNSW (Hierarchical Navigable Small Worlds)
   - L2 Distance, Inner Product and Cosine Distance are available with index.
 
-- Azure SQL Database </br>
+- **Azure SQL Database** </br>
 SQL Database doesn't have vector data type. However, you can pivot vector array into clustered columnstore indexed table.
 ![images/02_01_SQLDB_01.png](images/02_01_SQLDB_01.png) </br>
 Cosign Similarity calculation is available with query. </br>
 ![images/05_02_Summary_SQL_Query.png](images/05_02_Summary_SQL_Query.png)
 
-- Azure Cosmos DB for MongoDB (vCore)
+- **Azure Cosmos DB for MongoDB (vCore)**
   - IVFFLAT and HNSW (Preview)
   - L2 Distance, Inner Product and Cosine Distance are available with index.
 
-- Azure AI Search
+- **Azure AI Search**
   - HNSW and Exhaustive KNN (K-Nearest Neighbors)
   - L2 Distance, Inner Product and Cosine Distance are available.
 </br>
