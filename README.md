@@ -282,7 +282,11 @@ db.C4_HNSW_COS.aggregate([
 
 ## Azure AI Search
 
-Reference Doc: [Vectors in Azure AI Search](https://learn.microsoft.com/en-us/azure/search/vector-search-overview) </br>
+Reference Doc: </br>
+[Vectors in Azure AI Search](https://learn.microsoft.com/en-us/azure/search/vector-search-overview) </br>
+[Create a vector store](https://learn.microsoft.com/en-us/azure/search/vector-search-how-to-create-index?tabs=config-2023-11-01%2Crest-2023-11-01%2Cpush%2Cportal-check-index) </br>
+[Create a vector query in Azure AI Search](https://learn.microsoft.com/en-us/azure/search/vector-search-how-to-query?tabs=query-2023-11-01%2Cfilter-2023-11-01) </br>
+[azure-search-vector-samples](https://github.com/Azure/azure-search-vector-samples) </br>
 
 ### Index and Vector Profile
 
@@ -311,6 +315,7 @@ Reference Doc: [Vectors in Azure AI Search](https://learn.microsoft.com/en-us/az
 ### Results
 
 ![images/04_04_AISearch_Results.png](images/04_04_AISearch_Results.png)
+</br>
 
 ## Overall Results
 
