@@ -15,9 +15,9 @@
 
 ### Qurey Sample
 
-Query1 : "Bridge Over Trouble Water"
-Query2 : "When a man loves a woman"
-Query3 : "November Rain"
+Query1 : "Bridge Over Trouble Water" </br>
+Query2 : "When a man loves a woman" </br>
+Query3 : "November Rain" </br>
 
 ## Azure PostgreSQL Flexible Server
 
