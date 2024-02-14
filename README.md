@@ -3,6 +3,8 @@
 
 ## DataSet
 
+### Data Source
+
 [Hugging Face C4](https://huggingface.co/datasets/c4) </br>
 
 ![images/00_01_DataSet_C4.png](images/00_01_DataSet_C4.png)
@@ -10,6 +12,12 @@
 
 ![images/00_02_DataSet_C4_Embedded.png](images/00_02_DataSet_C4_Embedded.png)
 </br>
+
+### Qurey Sample
+
+Query1 : "Bridge Over Trouble Water"
+Query2 : "When a man loves a woman"
+Query3 : "November Rain"
 
 ## Azure PostgreSQL Flexible Server
 
@@ -222,7 +230,7 @@ db.runCommand({
 
 ![images/03_02_Cosmos_HNSW.png](images/03_02_Cosmos_HNSW.png)
 
-### Vector Search
+### Vector Query
 
 ```js
 const queryVector1 = 
