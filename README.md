@@ -245,7 +245,7 @@ db.C4_IVF_COS.aggregate([
       "cosmosSearch": {
         "vector": queryVector3,
         "path": "text_v",
-		"nProbes":100,
+		    "nProbes":100,
         "k": 5
       },
     "returnStoredSource": true }},
@@ -284,10 +284,15 @@ db.C4_HNSW_COS.aggregate([
 
 #### 1st Try
 
+m: 64
+efConstruction: 256
 ![images/03_05_Cosmos_Result_1st.png](images/03_05_Cosmos_Result_1st.png)
 
 #### 2nd Try
 
+M: 16
+efConstruction: 64
+nProbes:100
 ![images/03_06_Cosmos_Result_2nd.png](images/03_06_Cosmos_Result_2nd.png)
 
 </br>
@@ -374,6 +379,9 @@ Cosign Similarity calculation is available with query. </br>
 - **Azure Cosmos DB for MongoDB (vCore)**
   - IVFFLAT and HNSW (Preview)
   - L2 Distance, Inner Product and Cosine Distance are available with index.
+  - ***HNSW is in preview and value m and efConstruction is adjustable. (need a guide for m and efConstruction)***
+  - ***nProbe is set to 1 by default. in future release, automatic nProbe will be available.***
+  - ***Index must create first with empty collection before large data loading.***
 
 - **Azure AI Search**
   - HNSW and Exhaustive KNN (K-Nearest Neighbors)
