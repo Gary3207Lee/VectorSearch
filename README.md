@@ -292,15 +292,19 @@ db.C4_HNSW_COS.aggregate([
 
 #### 1st Try
 
-m: 64
-efConstruction: 256
+HNSW Index Created with following parameters: </br>
+m: 64 </br>
+efConstruction: 256 </br>
 ![images/03_05_Cosmos_Result_1st.png](images/03_05_Cosmos_Result_1st.png)
 
 #### 2nd Try
 
-M: 16
-efConstruction: 64
-nProbes:100
+HNSW Index Created with following parameters: </br>
+M: 16 </br>
+efConstruction: 64 </br>
+
+Put the following parameters in the search query for IVFFLAT: </br>
+nProbes:100 </br>
 ![images/03_06_Cosmos_Result_2nd.png](images/03_06_Cosmos_Result_2nd.png)
 
 </br>
